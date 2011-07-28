@@ -3,7 +3,6 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Filename</th>
     <th>Username</th>
     <th></th>
     <th></th>
@@ -13,7 +12,6 @@
 <% @photos.each do |photo| %>
   <tr>
     <td><%= photo.title %></td>
-    <td><%= photo.filename %></td>
     <td><%= photo.username %></td>
     <td><%= link_to 'Show', photo %></td>
     <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
